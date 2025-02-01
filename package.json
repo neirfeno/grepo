@@ -1,0 +1,14 @@
+{
+  "name": "neirfeno",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "tsc --build",
+    "clean": "tsc --build --clean"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
