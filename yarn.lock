@@ -1671,15 +1671,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"husky@npm:^8.0.0":
-  version: 8.0.3
-  resolution: "husky@npm:8.0.3"
-  bin:
-    husky: lib/bin.js
-  checksum: b754cf70fdc97c3b60fec5b80056b9c11436464953b1691bf2b5dcf0081fb6685d2c5f47abb8b2b1c49f504aabea5321fdd6496f8b755d9f6e7525a493406abb
-  languageName: node
-  linkType: hard
-
 "iconv-lite@npm:^0.6.2":
   version: 0.6.3
   resolution: "iconv-lite@npm:0.6.3"
@@ -2599,7 +2590,6 @@ __metadata:
   resolution: "neirfeno@workspace:."
   dependencies:
     "@types/jest": "npm:^28.1.8"
-    husky: "npm:^8.0.0"
     jest: "npm:^28.1.3"
     ts-jest: "npm:^28.0.8"
     typescript: "npm:^4.9.5"
