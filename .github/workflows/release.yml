@@ -45,12 +45,23 @@ jobs:
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
 
     - name: Apply version updates
+      id: apply
       if: steps.check.outcome == 'success'
       run: |
-        yarn version apply
+        if [ -n "$(ls -A your/dir 2>/dev/null)" ]
+        then
+          echo "has_changes=true" >> "$GITHUB_OUTPUT"
+          yarn version apply
+        else
+          echo "has_changes=false" >> "$GITHUB_OUTPUT"
+        fi
 
     - name: Publish to npm
-      if: steps.check.outcome == 'success'
-      run: yarn workspaces foreach --all npm publish --access public
+      if: steps.apply.outputs.has_changes == 'true'
+      run: |
+        yarn workspaces foreach --all npm publish --access public
+        git add .
+        git commit -m "Release versions: $(git diff --staged '**/package.json' | grep '\"version\":' | sed -e 's/.*"version": "\(.*\)".*/\1/')"
+        git push
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
