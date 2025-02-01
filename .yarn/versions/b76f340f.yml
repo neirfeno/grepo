@@ -1,7 +1,0 @@
-releases:
-  neirfeno: minor
-
-undecided:
-  - "@neirfeno/gcalendar"
-  - "@neirfeno/grepo-core"
-  - "@neirfeno/gsheets"

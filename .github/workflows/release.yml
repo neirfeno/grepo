@@ -48,14 +48,6 @@ jobs:
       if: steps.check.outcome == 'success'
       run: |
         yarn version apply
-        
-        # Get new version for tag
-        NEW_VERSION=$(node -p "require('./package.json').version")
-        
-        # Create and push tag
-        git tag -a "v${NEW_VERSION}" -m "Release version ${NEW_VERSION}"
-        git push
-        git push --tags
 
     - name: Publish to npm
       if: steps.check.outcome == 'success'
