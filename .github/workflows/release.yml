@@ -50,7 +50,7 @@ jobs:
         yarn version apply
         
         # Get new version for tag
-        NEW_VERSION=$(node -p "require('./packages/grepo-core/package.json').version")
+        NEW_VERSION=$(node -p "require('./package.json').version")
         
         # Create and push tag
         git tag -a "v${NEW_VERSION}" -m "Release version ${NEW_VERSION}"

@@ -1,0 +1,5 @@
+releases:
+  "@neirfeno/gcalendar": patch
+  "@neirfeno/grepo-core": patch
+  "@neirfeno/gsheets": patch
+  neirfeno: minor

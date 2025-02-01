@@ -1,6 +1,6 @@
 # Dependencies
 node_modules/
-.yarn/
+.yarn/*
 .pnp.*
 
 # TypeScript
@@ -23,3 +23,6 @@ yarn-error.log*
 # OS
 .DS_Store
 Thumbs.db 
+
+# Yarn deferred versions
+!.yarn/versions/

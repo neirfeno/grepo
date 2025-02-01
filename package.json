@@ -13,14 +13,8 @@
   "packageManager": "yarn@4.0.2",
   "devDependencies": {
     "@types/jest": "^28.1.8",
-    "husky": "^8.0.0",
     "jest": "^28.1.3",
     "ts-jest": "^28.0.8",
     "typescript": "^4.9.5"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn version check --interactive"
-    }
   }
 }
