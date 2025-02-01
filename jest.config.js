@@ -10,4 +10,4 @@ module.exports = {
   moduleNameMapper: {
     '^@neirfeno/(.*)$': '<rootDir>/packages/$1/src'
   }
-}; 
+};
