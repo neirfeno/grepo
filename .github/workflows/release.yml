@@ -59,6 +59,6 @@ jobs:
 
     - name: Publish to npm
       if: steps.check.outcome == 'success'
-      run: yarn workspaces foreach npm publish --access public
+      run: yarn workspaces foreach --all npm publish --access public
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
