@@ -1,8 +1,25 @@
 {
   "name": "@neirfeno/gcalendar",
   "version": "0.1.0",
+  "description": "Google Calendar repository pattern implementation",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/neirfeno/grepo.git",
+    "directory": "packages/gcalendar"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "google",
+    "calendar",
+    "repository",
+    "pattern"
+  ],
+  "author": "Neirfeno Limited",
   "dependencies": {
     "@neirfeno/grepo-core": "workspace:*"
   }
