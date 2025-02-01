@@ -1,5 +1,6 @@
 {
   "name": "neirfeno",
+  "version": "0.0.1",
   "private": true,
   "workspaces": [
     "packages/*"
@@ -7,11 +8,13 @@
   "scripts": {
     "build": "tsc --build",
     "clean": "tsc --build --clean",
-    "test": "jest"
+    "test": "jest",
+    "prepare": "husky install"
   },
   "packageManager": "yarn@4.0.2",
   "devDependencies": {
     "@types/jest": "^28.1.8",
+    "husky": "^8.0.0",
     "jest": "^28.1.3",
     "ts-jest": "^28.0.8",
     "typescript": "^4.9.5"
