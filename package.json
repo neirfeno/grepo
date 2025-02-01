@@ -9,7 +9,7 @@
     "clean": "tsc --build --clean",
     "test": "jest"
   },
-  "packageManager": "yarn@3.6.0",
+  "packageManager": "yarn@4.0.2",
   "devDependencies": {
     "@types/jest": "^28.1.8",
     "jest": "^28.1.3",
