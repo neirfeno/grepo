@@ -1,0 +1,13 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "types": ["jest"],
+    "noEmit": true
+  },
+  "include": ["packages/*/src/**/*.test.ts"],
+  "references": [
+    { "path": "packages/grepo-core" },
+    { "path": "packages/gcalendar" },
+    { "path": "packages/gsheets" }
+  ]
+} 
